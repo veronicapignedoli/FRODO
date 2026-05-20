@@ -6,8 +6,8 @@ Official PyTorch implementation of the paper: **"3D Classification of Paramagnet
 ## 🧙‍♂️ Why "FRODO"?
 **FRODO** stands for **F**usion framework for **R**im lesion classificati**O**n using multimodal **D**eep-learning neur**O**imaging. 
 
-But just like Frodo Baggins, this model has one specific mission: **to find the rings**. 
-In Multiple Sclerosis, **Paramagnetic Rim Lesions ($Rim^+$)** appear on susceptibility-sensitive MRI scans as distinct, ring-like structures. FRODO is an asymmetric 3D multimodal framework tailored specifically to hunt down and classify these chronic active inflammatory biomarkers from Quantitative Susceptibility Mapping (QSM) and FLAIR MRI.
+But just like Frodo Baggins, this model has one specific mission: **to find the rings**. In Multiple Sclerosis, **Paramagnetic Rim Lesions ($Rim^+$)** appear on susceptibility-sensitive MRI scans as distinct, ring-like structures. FRODO is an asymmetric 3D multimodal framework tailored specifically to hunt down and classify these chronic active inflammatory biomarkers from Quantitative Suceptibility Mapping (QSM) and FLAIR MRI.
+
 ---
 
 ## 📝 Abstract
@@ -27,3 +27,7 @@ FRODO processes 3D lesion patches using an asymmetric approach:
 ---
 
 ## 📁 Repository Structure
+
+
+---
+🔥 Stay tuned, code is still sorting out...
