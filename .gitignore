@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Data & Weights (FONDAMENTALE PER I REPO PUBBLICI)
+data/
+*.pth
+*.ckpt
+*.nii
+*.nii.gz
+*.zip
+*.tar.gz
+
+# IDEs e Sistema
+.vscode/
+.idea/
+.DS_Store
