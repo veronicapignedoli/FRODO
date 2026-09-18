@@ -1,0 +1,29 @@
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# Local data (real or synthetic) and outputs
+data/*
+!data/README.md
+results/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+
+# Logs and experiment tracking
+*.log
+logs/
+wandb/
