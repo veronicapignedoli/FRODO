@@ -1,3 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+
 # Model checkpoints
 *.pt
 *.pth
@@ -8,19 +15,19 @@ checkpoints/
 data/*
 !data/README.md
 results/
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.egg-info/
+*.nii
+*.nii.gz
+*.zip
+*.tar.gz
 
 # Virtual environments
 .venv/
 venv/
 env/
 
-# OS
+# IDEs and OS
+.vscode/
+.idea/
 .DS_Store
 
 # Logs and experiment tracking
