@@ -89,11 +89,15 @@ python evaluate.py --data_dir data/synthetic \
 ```bash
 python generate_synthetic_data.py --output_dir data/synthetic
 python train_ssl.py --data_dir data/synthetic --output_dir checkpoints/ssl --max_epochs 2
-python train.py --data_dir data/synthetic --ssl_checkpoint checkpoints/ssl/best.pt \
-    --fold 0 --output_dir checkpoints/finetuning --max_epochs 2
+for fold in 0 1 2 3 4; do
+    python train.py --data_dir data/synthetic --ssl_checkpoint checkpoints/ssl/best.pt \
+        --fold $fold --output_dir checkpoints/finetuning --max_epochs 2
+done
 python evaluate.py --data_dir data/synthetic \
     --checkpoints_dir checkpoints/finetuning --output_dir results/
 ```
+
+`evaluate.py` expects one checkpoint per fold (`fold_0.pt` ... `fold_4.pt`) in `--checkpoints_dir`, so `train.py` must be run once per fold first.
 
 Every script is self-documenting via `--help`.
 
