@@ -11,7 +11,7 @@ But just like Frodo Baggins, this model has one specific mission: **to find the 
 ---
 
 ## 📝 Abstract
-Paramagnetic rim lesions ($Rim^+$) identified on susceptibility-sensitive MRI have recently emerged as a specific biomarker of chronic active inflammation in Multiple Sclerosis (MS) and are associated with long-term disability progression. However, susceptibility imaging and expert interpretation remain limited to specialized centers, visual assessment is time-consuming and variable, and the low prevalence of $Rim^+$ lesions poses severe class imbalance challenges for automated analysis.
+Paramagnetic rim lesions ($Rim^+$) identified on susceptibility-sensitive MRI have recently emerged as a specific biomarker of chronic active inflammation in Multiple Sclerosis (MS) and are associated with long-term disability progression. Susceptibility imaging and expert interpretation remain limited to specialized centers, visual assessment is time-consuming and variable, and the low prevalence of $Rim^+$ lesions poses severe class imbalance challenges for automated analysis.
 
 We propose **FRODO**, a 3D **F**usion framework for **R**im lesion classificati**O**n using multimodal **D**eep-learning neur**O**imaging, designed for lesion-level $Rim^+/Rim^-$ classification from Quantitative Susceptibility Mapping (QSM) and FLAIR MRI.
 
@@ -103,16 +103,8 @@ Every script is self-documenting via `--help`.
 
 ## 📖 Citation
 
-```bibtex
-@inproceedings{pignedoli2026frodo,
-  title     = {3D Classification of Paramagnetic Rim Lesions in Multiple Sclerosis
-               via Asymmetric QSM--FLAIR Modeling},
-  author    = {Pignedoli, Veronica and Boffa, Giacomo and Noceti, Nicoletta and
-               Inglese, Matilde and Odone, Francesca and Moro, Matteo},
-  booktitle = {Medical Image Computing and Computer-Assisted Intervention (MICCAI)},
-  year      = {2026}
-}
-```
+
+BibTeX will be added upon publication at MICCAI 2026.
 
 ## 📄 License
 
