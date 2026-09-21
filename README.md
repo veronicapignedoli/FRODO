@@ -19,6 +19,10 @@ The architecture explicitly models modality asymmetry by treating QSM as the pri
 
 The method was evaluated on a clinically acquired cohort of 88 people with MS with expert lesion annotations as reference standard. Results highlight improved performance compared to prior architectures, supporting the effectiveness of asymmetric multimodal modeling for automated chronic active lesion identification.
 
+
+## 📄 **Preprint:** [arXiv:2506.16756](https://arxiv.org/abs/2506.16756)
+
+
 ## 🏗️ Architecture Overview
 FRODO processes 3D lesion patches using an asymmetric approach:
 1. **Primary Stream (QSM):** Extracts the core susceptibility-driven features of the rim.
