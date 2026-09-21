@@ -91,10 +91,8 @@ def evaluate(model, phi, loader, device):
 
 
 def backbone_state_dict(model):
-    """Only the two-stream encoder weights (qsm_stem, flair_stem) — the parts
-    actually exercised during SSL pretraining. Everything downstream of the
-    FiLM fusion (film, fuse_conv, block3/4, classifier) is untouched by
-    Stage 1 and deliberately excluded, so Stage 2 loads it with
+    """Two-stream encoder weights (qsm_stem, flair_stem) — the parts
+    actually exercised during SSL pretraining. Stage 2 loads the downstream layers of the FiLM fusion with
     strict=False and keeps its own fresh initialization there."""
     state = {}
     state.update({f"qsm_stem.{k}": v for k, v in model.qsm_stem.state_dict().items()})

@@ -36,7 +36,7 @@ def supervised_contrastive_loss(embeddings, labels, temperature=0.1):
 
 class CompositeSupervisedLoss(nn.Module):
     """L_sup = L_BCE + softplus(w) * L_contrastive, with w a learned
-    nn.Parameter (non-negative via softplus), per Mildenberger et al. CVPR 2025."""
+    nn.Parameter (non-negative via softplus)."""
 
     def __init__(self, temperature=0.1, init_logit=-2.5):
         super().__init__()

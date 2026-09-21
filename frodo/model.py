@@ -1,7 +1,7 @@
 """Two-stream QSM/FLAIR classifier with spatial FiLM fusion (FRODO).
 
-Architecture only: encoders, FiLM fusion, SE blocks, classification head,
-and the optional EMA weight-averaging wrapper. No optimizer or data loading.
+Architecture: encoders, FiLM fusion, SE blocks, classification head,
+and the optional EMA weight-averaging wrapper.
 """
 import copy
 
@@ -18,7 +18,7 @@ def group_norm(num_channels):
 
 
 class ResidualBlock3D(nn.Module):
-    """Pre-activation residual block: GN-ReLU-Conv, twice, plus a skip
+    """Pre-activation residual block: GN-ReLU-Conv x2 + skip
     connection (1x1x1 projection when channels or stride change)."""
 
     def __init__(self, in_channels, out_channels, stride=1):
@@ -168,8 +168,7 @@ class MultiModalClassifier(nn.Module):
 
 
 class ModelEMA:
-    """Optional exponential moving average of model weights (--use_ema).
-    Not part of the paper; provided as an optional training utility."""
+    """Optional exponential moving average of model weights (--use_ema)."""
 
     def __init__(self, model, decay=0.999):
         self.decay = decay
